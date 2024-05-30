@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleform.css">
+
+</head>
+<body>
+    <header>
+        <a href="index_.html"><img src="logo new music rhema-Récupéré pour broderie.png" alt="logo Music Rhema"></a>
+        <span class="tabs">
+            <span>
+                <a href="index_.html" class="whiteLinks">Accueil</a>
+                <a href="seconnecter.html">Se Connecter</a>
+                <a href="formulaire.html">S'inscrire</a>
+                <a href="#contact">Contactez-nous</a>
+            </span>
+        </span>
+    </header>
+
+    
+    <form id="course-form">
+        <h1>Formulaire d'Inscription à l'École de Musique</h1>
+        <div class="form-group">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="surname">Prénom:</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+        <div class="form-group">
+            <label for="surname">Date de naissance:</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+        <div class="form-group">
+            <label for="surname">Sexe :</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Numéro de téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <!-- <div class="form-group"> -->
+        <div >
+            <label for="course">Quelle formation de l'École de Musique aimerez-vous faire?</label>
+            <select id="course" name="course" required>
+                <option value="vocal">Formation vocale</option>
+                <option value="instrumental">Formation Instrumentale</option>
+            </select>
+        </div>
+        <div id="modules" class="hidden">
+            <label for="module">Choisissez le module:</label>
+            <select id="module" name="module" required>
+                <option value="module1">Module 1</option>
+                <option value="module2">Module 2</option>
+                <option value="module3">Module 3</option>
+            </select>
+        </div>
+        <br>
+        <div id="module23-options" class="hidden">
+            <p>Avez-vous les prérequis qu'il faut pour faire ce module ?</p>
+            <div class="radio-group">
+                <span>
+                    <label for="previous-yes">Si oui, passez le test</label>
+                    <input type="radio" id="previous-yes" name="previous-module" value="yes">
+                </span>
+                <span>
+                    <label for="previous-no">Si non, veuillez passer d'abord les modules précédents.</label>
+                    <!-- <input type="radio" id="previous-no" name="previous-module" value="no"> -->
+                </span>
+            </div>
+        </div>
+        <br>
+        <div id="module1-options" class="hidden">
+            <label for="module1-payment">Option de payement:</label>
+            <div class="radio-group">
+                <span>
+                    <label for="pay-full">Payer le module entièrement</label>
+                    <input type="radio" id="pay-full" name="module1-payment" value="full">
+                </span>
+                <span>
+                    <label for="pay-lesson">Payer leçon apres lesçon</label>
+                    <input type="radio" id="pay-lesson" name="module1-payment" value="lesson">
+                </span>
+            </div>
+        </div>
+       
+        <a href="payment.html"><h3>Soumettre</h3></a>
+    </form>
+
+
+    <footer>
+        <div>
+            <div>
+                <h3 class="poppins-bold"><a href="http://">À propos de nous</a></h3>
+                    <a href="https://musicrhema.fr/a-propos" class="poppins-thin">L'association MRh</a> 
+                    <a href="https://musicrhema.fr/nos-formations" class="poppins-thin">Nos formations</a>
+            </div>
+            <div>
+                <h3 class="poppins-bold"><a href="http://">Nos sites</a></h3>
+                    <a href="https://musicrhema.fr/music-rhema-store">Produits</a>
+                    <a href="https://musicrhema.fr/nos-services">Services</a>
+            </div>
+            <div class="contacter">
+                <h3 class="poppins-bold" id="contact">Contactez-nous</h3>
+                
+                    <a href="https://musicrhema.fr/nos-formations#:~:text=contact%40musicrhema.fr" ><img src="logo_email-removebg-preview.png" alt="logo email" >contact@musicrhema.fr </a>
+                    <a><img src="logo_whatsapp-removebg-preview.png" alt="logo whatsapp" >(+237) 659-282-779</a>
+                   
+                
+            </div>
+            <div>
+                <h3 class="poppins-bold">Suivez-nous sur les réseaux</h3>
+                <p>
+                    <a href="https://www.facebook.com/musicrhema/" ><img src="logoFacebook.png" alt="logo Facebook" ></a>
+                    <a href="http://" ><img src="twitter-removebg-preview.png" alt="logo twitter" ></a>
+                    <a href="https://www.youtube.com/@MusicRhema" ><img src="logoyoutube-removebg-preview.png" alt="logo Youtube" ></a>
+                </p>
+            </div>
+           
+        </div>
+        <div class="copyRight" class="poppins-extralight"><p>Copyright  ©  2024 Formations - Music Rhema (MRh).</p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

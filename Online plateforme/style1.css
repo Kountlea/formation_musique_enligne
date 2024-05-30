@@ -1,0 +1,450 @@
+.slide{
+  background-color: #D9D9D9;
+  border: solid 2px #FCE9C7;
+  border-radius: 10px;
+  margin: 0 2% 2% 2%;
+  height: 30vh;
+  padding: 2%;
+  position: relative;
+  top: -5vh;
+}
+
+.coachs{
+  display: flex;
+  flex-direction: column;
+}
+.coachs h2{
+  font-size: 3em;
+}
+.nosCoachs{
+  display: flex;
+  justify-content: center;
+  background-color:  #D9D9D9;
+  border:solid 2px #FCE9C7 ;
+  border-radius: 10px;
+  height: min-content;
+  padding: 2%;
+  margin: 2% 5% 0 5%;
+}
+.slid{
+  width: 99vw;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+.slideCoachs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5% 5% 5% 5%;
+  width: fit-content;
+  animation: slideLeft 50s infinite linear; /* Apply slide animation */
+ 
+}
+.slideCoachs img{
+  width: 55vw;
+  height: auto;
+  margin-right: 5vw;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+ 
+
+  animation-play-state: running; /* Pause animation when container has 'paused' class */
+}
+@keyframes slideLeft {
+  from { transform: translateX(0); } /* Start from left edge */
+  to { transform: translateX(-480vw); } /* Slide to the left by 100% (container width) */
+}
+.prev-btn, .next-btn {
+  position: absolute; /* Position buttons outside the container */
+  margin-top: 80vh; /* Center buttons vertically */
+  transform: translateY(-50%); /* Adjust vertical position if needed */
+  padding: 10px;
+  border: solid 2x #E8AF6D;
+  border-radius: 3px;
+  cursor: pointer; /* Indicate clickable buttons */
+  background-color: #E8AF6D;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.prev-btn {
+  left: 10px; /* Position left button */
+}
+
+.next-btn {
+  right: 10px; /* Position right button */
+}
+
+.pause-btn {
+  left: 48vw; /* Position pause button at the bottom */
+}
+.paused .slide {
+  animation-play-state: paused; /* Pause animation when container has 'paused' class */
+}
+.cvMusic{
+  background-color:  #D9D9D9;
+  border:solid 2px #FCE9C7 ;
+  border-radius: 10px;
+  height: 70vh;
+  width: 25vw;
+  padding: 2%;
+  margin: 0 2% 2% 2%;
+}
+#cvMusic{
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  width: 25vw;
+  margin: 0 2% 2% 2%;
+}
+#cvMusic div{
+  background-color:  #D9D9D9;
+  border:solid 2px #FCE9C7 ;
+  border-radius: 10px;
+  height: 85%;
+  width: 100%;
+  padding: 7%;
+}
+#cvMusic span{
+  background-color: #E8AF6D;
+  padding: 4% 5%;
+  margin: 7% 20%;
+  border: solid 2px #FCE9C7;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+#formulaire{
+  height: 110vh ;  
+  padding: 2em;
+  gap: 2em;
+  color: #951818;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: .0025em;
+}
+input{
+  height: 3.5vh;
+}
+.formulaire1{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 1.1em;
+}
+#formulaire section{
+ background-color: #fff;  
+ border: 2px solid rgba(149, 24, 24, 0.2) ;
+ border-radius: 10px;
+ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.formulaire2{
+  height: 85vh;
+  margin : 2em 25em;
+  padding: 3em;
+}
+.formulaire_2{
+  height: 35vh;
+  margin : 2em 25em;
+  padding: 3em;
+}
+
+.formulaire-2{
+  height: 35vh;
+  margin : 2em 23em;
+  padding: 4em 1em;
+  text-align: center;
+  font-size: x-large;
+  background-color: ;
+}
+
+#payment{
+  height: 100vh;
+}
+.payment1{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  background-color: #fff;  
+ border: 2px solid rgba(149, 24, 24, 0.2) ;
+  border-radius: 10px;
+  padding: 1.5em;
+  margin: 1.5em;
+  color: rgba(149, 24, 24);
+}
+.payment2{
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  background-color: #fff;
+  padding: 2.5em 15em;
+  margin: 1.5em 0;
+  color: #951818;
+}
+.payment2 h3{
+  padding: 0.5em 8em;
+}
+.payment3{
+  height: 30vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1.5em;
+  margin: 1em 1.5em;
+}
+.payment3 div{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  margin: 1em;
+  height: 30vh;
+  border: solid 2px rgba(149, 24, 24, 0.6);
+  border-radius: 10px;
+  background-color: #fff;
+}
+.payment3 div a{
+     background-color: rgba(149, 24, 24, 0.6);
+    color: #FFF;
+    text-align: center;
+    padding: 1em;
+    margin: 0.5em;
+    width: 100%;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.training{
+  height: 100vh;
+}
+.training a{
+  color: black;
+  gap: 2em;
+}
+.training1{
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  padding: 1.5em 8em ;
+  gap: 1em;
+}
+.train1{
+  background-color: rgba(149, 24, 24, 0.6);
+  width: 2.5em;
+  height: 2.5em;
+  border: solid 2px rgba(149, 24, 24, 0.6);
+  border-radius: 30px;
+}
+.training1>div{
+  display: flex;
+  flex-direction: row;
+}
+/* .training1>div span{
+  padding: 5%;
+    margin: 0% 85%;
+    background-color: #D9D9D9;
+    border: 2px solid #fff;
+    border-radius: 30px;
+} */
+#payConnect{
+  display: flex;
+  flex-direction: column;
+  margin: 0 25em 0 0;
+}
+button{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+#cache {
+  display: none; /* Masquer la boîte par défaut */
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f0f0f0;
+  border:2px solid #f0f0f0;
+  border-radius: 0 0 10px 10px;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin: 0 0 0 30em;
+  position: relative;
+  top: -6vh;
+  z-index: 1;
+  gap: 1em;
+  cursor: pointer;
+}
+
+.train2{
+  text-align: center;
+  gap: 5em;
+}
+/* .train3{
+  font-weight: 400;
+  color: red;
+} */
+/* padding: 1em;
+  gap: 0.75em; */
+.training2{
+  display: block;
+  height: 90vh;
+  display: flex;
+  flex-direction:row ;
+  border-top:solid 2px #D9D9D9;
+  position: unset;
+  top: unset;
+}
+.training2>div{
+  border-left: 2px solid #D9D9D9;
+  padding: 1.5em 1.5em 1.5em ;
+  text-align: center;
+}
+.training2>div>div{
+  display: flex;
+  width: 20vw;
+  height: 8vh;
+  background-color: rgba(149, 24, 24, 0.6);
+  border: 2px solid rgba(149, 24, 24, 0.6);
+  border-radius: 10px;
+  margin: 1.0em 1em 0 3em;
+  padding: 1em 1em 1em 5em ;
+  font-size: x-large;
+}
+.training2>div>div>span{
+  padding: 5%;
+  margin:  0% 0 0 35%;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+.training2>div>div>h2{
+  display: flex;
+  text-align: center;
+  color: #951818;
+}
+#training2 div{
+  display: block;
+  width: 64vw;
+  padding: 0;
+  height: 75vh;
+  margin:  0.5em 1.0em 2em 1.0em;
+  background-color: rgba(149, 24, 24, 0.02);
+  border: solid 2px rgba(149, 24, 24, 0.2);
+  border-radius: 10px;
+}
+.frame{
+  display: none;
+}
+/* .train{
+  background-color: #D9D9D9;
+}   */
+#training2>span{
+  width: 25vw;
+  padding: 1em;
+  margin:  5vh 50vw 0 0;
+  background-color: #D9D9D9;
+  border: 2px solid #fff;
+}
+
+
+
+@media (min-width: 500px) and (max-width: 1366px) {
+  .training1 {
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  padding: 1.5em 8em;
+  gap: 1em;
+}
+
+#payConnect {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15em 0 0;
+}
+
+.training2 {
+  display: block;
+  /* height: %; */
+  display: flex;
+  flex-direction: row;
+  border-top: solid 2px #D9D9D9;
+}
+
+.training2 > div > div {
+  display: flex;
+  align-items: center;
+  width: 18vw;
+  height: 8vh;
+  background-color: rgba(149, 24, 24, 0.6);
+  border: 2px solid rgba(149, 24, 24, 0.6);
+  border-radius: 10px;
+  margin: 0em 1em 1em 3em;
+  padding: 0 1em;
+  font-size: large;
+}
+
+.training2 > div > div > span {
+  height: 1em;
+  width: 1em;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 200px;
+}
+
+.training{
+  height: 112vh;
+}
+
+#training2 > span {
+  width: 25vw;
+  padding: 1em;
+  margin: 5vh 35vw 0 0;
+  background-color: rgba(149, 24, 24, 0.6);
+  border: 2px solid #fff;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 12em;
+}
+  
+#formulaire {
+  height: 130vh;
+  padding: 2em;
+  gap: 2em;
+  color: #951818;
+}
+input {
+  height: 3.5vh;
+}
+
+.formulaire-2 {
+  height: 45vh;
+  margin: 2em 13em;
+  padding: 2.5em 1em;
+  text-align: center;
+  font-size: x-large;
+  background-color: ;
+}
+#payment {
+  height: 120vh;
+}
+payment3 {
+  height: 45vh;
+}
+/* */
+}
+
+@media (30em <= width <= 50em) {
+  /* … */
+}
